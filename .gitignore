@@ -1,0 +1,8 @@
+# ignorar arquivos de ambiente e credenciais
+.env
+
+# ignorar diretórios
+.agents
+.aws
+.codex
+.venv

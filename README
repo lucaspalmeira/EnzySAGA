@@ -1,0 +1,48 @@
+# EnzySAGA
+
+### 1. Estrutura do projeto inicial
+
+```text
+EnzySAGA/
+│
+├── ETL/
+│   │
+│   ├── Extract/
+│   │   ├── __init__.py
+│   │   ├── brenda.py
+│   │   ├── sabiork.py
+│   │   └── uniprot.py
+│   │
+│   ├── Transform/
+│   │   ├── __init__.py
+│   │   └── transform.py
+│   │
+│   ├── Load/
+│   │   ├── __init__.py
+│   │   └── load.py
+│   │
+│   ├── __init__.py
+│   └── pipeline.py
+│
+├── data/
+│   ├── raw/
+│   └── processed/
+│
+├── tests/
+│
+├── pyproject.toml
+└── README.md
+```
+
+### 2. Responsabilidade de cada diretório
+
+| Diretório         | Responsabilidade                              |
+| ----------------- | --------------------------------------------- |
+| `ETL/Extract/`    | Extrair dados de BRENDA, SABIO-RK e UniProt   |
+| `ETL/Transform/`  | Limpar, validar, converter e padronizar dados |
+| `ETL/Load/`       | Salvar dados processados                      |
+| `ETL/pipeline.py` | Coordenar a execução do ETL                   |
+| `data/raw/`       | Preservar os dados originais                  |
+| `data/processed/` | Armazenar os dados transformados              |
+| `tests/`          | Testar cada componente                        |
+

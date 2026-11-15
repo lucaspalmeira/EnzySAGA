@@ -1,0 +1,20 @@
+[build-system]
+requires = ['setuptools>=77']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = 'EnzySAGA'
+version = '0.1.0'
+description = "Surrogate-Assisted Genetic Algorithm for Enzyme Engineering"
+readme = 'README'
+requires-python = '>=3.12'
+
+dependencies = [
+    'zeep',
+    'pandas',
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["etl", "etl.*"]
+namespaces = false
